@@ -1,0 +1,125 @@
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px; /* Adjust the width as needed */
+    height: 100%; /* Full height */
+    background-color: #333; /* Background color */
+    /* color: white; Text color */
+    transition: all 0.5s ease;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .sidebar.active ~ .main-content  {
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+  
+  .sidebar.active{
+    width: 250px;
+    
+  }
+
+  .sidebar #btn {
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;    
+    top: .4rem;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor:pointer;
+  }
+
+  .sidebar.active #btn{
+    left: 85%;
+  }
+
+  .sidebar .top .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    margin-top: 0.2rem;
+  }
+
+  .sidebar.active .top .logo {
+    opacity: 1;
+  }
+
+  .user-img {
+    width: 20vh;
+    filter: invert(100%);
+  }
+
+
+
+  .sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+    
+  }
+
+  .sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    border-radius: 0.8rem;
+  }
+
+  .sidebar ul li a:hover {
+    background-color: #fff;
+    color: #12171e;
+  }
+  .sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;  
+  }
+
+  .sidebar .nav-item{
+    opacity: 0;
+    display: none;
+  }
+  .sidebar.active .nav-item{
+    opacity: 1;
+    display: flex;
+  }
+  
+  .sidebar ul li .tooltip {
+    position: absolute;
+    left : 140px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
+    border-radius: 0.6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index:20;
+    opacity: 0;
+    white-space: nowrap;
+  }
+  .sidebar ul li:hover .tooltip {
+    opacity: 1;
+  }
+
+  .sidebar.active ul li .tooltip {
+    display: none;
+  }
+  
+  .sidebar.active ~ .container {
+    /* left: 250px; Adjust to match the extended sidebar width */
+    width: calc(100% - 250px); /* Adjust to match the extended sidebar width */
+  }
