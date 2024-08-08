@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Why AeSea</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <img src="assets\logo words.png" alt="User Image" class="user-img" />
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="bx bx-droplet"></i>
+            <span class="nav-item">Why AeSea</span>
+          </a>
+          <span class="tooltip">Why AeSea</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-buildings"></i>
+            <span class="nav-item">How it works</span>
+          </a>
+          <span class="tooltip">How it works</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-tachometer"></i>
+            <span class="nav-item">Impact</span>
+          </a>
+          <span class="tooltip">Impact</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-medal"></i>
+            <span class="nav-item">Achievement</span>
+          </a>
+          <span class="tooltip">Achievement</span>
+        </li>
+      </ul>
+      <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function () {
+          sidebar.classList.toggle("active");
+        };
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="wrapper-1">
+        <h1 class="title">Why AeSea</h1>
+        <div class="underline"></div>
+        <div class="row">
+          <div class="col-md-6 text-box">
+            <h2>What we Facing</h2>
+            <p>
+              HK has high energy consumption and aggressive goals <br />
+              Commercial buildings energy use = 1 Little Boy Atomic Bomb per 5
+              hours
+            </p>
+          </div>
+          <div class="col-md-6 right-img">
+            <div style="text-align: left">
+              <img src="assets/image1.png" alt="Image 1" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 left-img">
+            <img src="assets/image2.png" alt="Image 2" class="img-fluid" />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>Our Opportunity</h2>
+            <p>
+              85% of HK citizens use seawater to flush their toilets<br />
+              15 Olympic swimming pool worth of seawater is supplied every hour
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-box">
+            <h2>What We can Do</h2>
+            <p>
+              AeSea can ultilize the seawater for flushing<br />
+              Being Low-Carbon, Efficient, Easy to Manage
+            </p>
+          </div>
+          <div class="col-md-6 right-img">
+            <img src="assets/image3.png" alt="Image 3" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-2">
+        <h1 class="title">How It Works</h1>
+        <div class="underline"></div>
+      </div>
+    </div>
+  </body>
+</html>
