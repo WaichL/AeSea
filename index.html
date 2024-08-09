@@ -161,27 +161,27 @@
           <div class="col-md-10">
             <div class="value-box">
               <div class="value-part" id="carbon-saved">
-                <span class="impact-value" id="electricity">2305</span><br />
-                <span class="impact-unit">kWh saved</span>
+                <span class="impact-value" id="electricity">41000</span><br />
+                <span class="impact-unit" id="electricity-unit">kWh Saved</span>
               </div>
               <div class="equal-sign">=</div>
               <div class="value-part" id="relative-value">
-                <span class="impact-value" id="electricity-eqv">2305</span
+                <span class="impact-value" id="electricity-eqv">270</span
                 ><br />
                 <span class="impact-unit" id="electricity-eqv-unit"
-                  >Trees Planted</span
+                  >Tons of Co2e</span
                 >
               </div>
             </div>
           </div>
           <div class="col-md-2">
             <div class="button-box">
-              <button class="btn btn-success btn-block" onclick="updateValue()">
+              <button class="btn btn-success btn-block" onclick="updateToTrees()">
                 <i class="bx bxs-tree"></i>
               </button>
               <button
                 class="btn btn-secondary btn-block"
-                onclick="updateEqvValue()"
+                onclick="updateToCo2e()"
               >
                 <img
                   src="assets/co2.png"
@@ -190,10 +190,10 @@
                   id="co2-unit"
                 />
               </button>
-              <button class="btn btn-primary btn-block" onclick="resetValue()">
+              <button class="btn btn-primary btn-block" onclick="updateToCars()">
                 <i class="bx bxs-car"></i>
               </button>
-              <button type="button" class="btn btn-warning">
+              <button type="button" class="btn btn-warning" onclick="updateToDollar()">
                 <i class="bx bx-dollar" style="color: #ffffff"></i>
               </button>
             </div>
