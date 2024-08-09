@@ -18,6 +18,9 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/sidebar.css" />
+    <link rel="stylesheet" href="assets/table.css" />
+    <link rel="stylesheet" href="assets/impact.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -33,28 +36,28 @@
       </div>
       <ul>
         <li>
-          <a href="#">
+          <a href="#why-aesea">
             <i class="bx bx-droplet"></i>
             <span class="nav-item">Why AeSea</span>
           </a>
           <span class="tooltip">Why AeSea</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#how-it-works">
             <i class="bx bx-buildings"></i>
             <span class="nav-item">How it works</span>
           </a>
           <span class="tooltip">How it works</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#impact">
             <i class="bx bx-tachometer"></i>
             <span class="nav-item">Impact</span>
           </a>
           <span class="tooltip">Impact</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#achievement">
             <i class="bx bx-medal"></i>
             <span class="nav-item">Achievement</span>
           </a>
@@ -72,12 +75,12 @@
     </div>
 
     <div class="container">
-      <div class="wrapper-1">
+      <div class="wrapper-1" id="why-aesea">
         <h1 class="title">Why AeSea</h1>
         <div class="underline"></div>
         <div class="row">
           <div class="col-md-6 text-box">
-            <h2>What we Facing</h2>
+            <h2>What We Facing</h2>
             <p>
               HK has high energy consumption and aggressive goals <br />
               Commercial buildings energy use = 1 Little Boy Atomic Bomb per 5
@@ -115,10 +118,104 @@
           </div>
         </div>
       </div>
-      <div class="wrapper-2">
+      <div class="wrapper-2" id="how-it-works">
         <h1 class="title">How It Works</h1>
         <div class="underline"></div>
+        <div class="row">
+          <div class="col-md-6 left-img">
+            <img src="assets/diagram.gif" alt="Gif 1" class="img-fluid" />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>Working Principle</h2>
+            <p>
+              AeSea System use flushing water to absorb the heat from the
+              refrigerant<br />
+              It made possible by the higher heat transfer rate of water than
+              air
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-box">
+            <h2>Integrated Dashboard</h2>
+            <p>
+              Our Solution includes a dashboard for monitoring and control<br />
+              It also integrate a predictive mantanence system to minimize
+              unexpected failure
+            </p>
+          </div>
+          <div class="col-md-6 right-img">
+            <div style="text-align: left">
+              <img src="assets/dashboard.png" alt="Image 4" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-3" id="impact">
+        <h1 class="title">Impact</h1>
+        <div class="underline"></div>
+        <div class="row">
+          <h2 class="impact-title">
+            What we did for Well Tech Center past year:
+          </h2>
+          <div class="col-md-10">
+            <div class="value-box">
+              <div class="value-part" id="carbon-saved">
+                <span class="impact-value" id="electricity">2305</span><br />
+                <span class="impact-unit">kWh saved</span>
+              </div>
+              <div class="equal-sign">=</div>
+              <div class="value-part" id="relative-value">
+                <span class="impact-value" id="electricity-eqv">2305</span
+                ><br />
+                <span class="impact-unit" id="electricity-eqv-unit"
+                  >Trees Planted</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="button-box">
+              <button class="btn btn-success btn-block" onclick="updateValue()">
+                <i class="bx bxs-tree"></i>
+              </button>
+              <button
+                class="btn btn-secondary btn-block"
+                onclick="updateEqvValue()"
+              >
+                <img
+                  src="assets/co2.png"
+                  alt="co2"
+                  class="img-fluid"
+                  id="co2-unit"
+                />
+              </button>
+              <button class="btn btn-primary btn-block" onclick="resetValue()">
+                <i class="bx bxs-car"></i>
+              </button>
+              <button type="button" class="btn btn-warning">
+                <i class="bx bx-dollar" style="color: #ffffff"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-4" id="achievement">
+        <h1 class="title">Achievement</h1>
+        <div class="underline"></div>
+        <div class="row align-items-center">
+          <div class="col-md-4 col-12 text-center">
+              <img src="assets/beamplussilver.png" alt="Medal" class="img-fluid" id="medal"/>
+          </div>
+          <div class="col-md-8 col-12">
+              <p class="description">
+                  We have achieved significant milestones in our journey, including
+                  receiving the prestigious Well Tech Center award for innovation and
+                  sustainability.
+              </p>
+          </div>
       </div>
     </div>
+    <script src="assets/scripts.js"></script>
   </body>
 </html>
