@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/sidebar.css" />
     <link rel="stylesheet" href="assets/table.css" />
+    <link rel="stylesheet" href="assets/impact.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -49,18 +50,25 @@
           <span class="tooltip">How it works</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#impact">
             <i class="bx bx-tachometer"></i>
             <span class="nav-item">Impact</span>
           </a>
           <span class="tooltip">Impact</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#achievement">
             <i class="bx bx-medal"></i>
             <span class="nav-item">Achievement</span>
           </a>
           <span class="tooltip">Achievement</span>
+        </li>
+        <li>
+          <a href="_prototype_dashboard/index.html">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
         </li>
       </ul>
       <script>
@@ -79,7 +87,7 @@
         <div class="underline"></div>
         <div class="row">
           <div class="col-md-6 text-box">
-            <h2>What we Facing</h2>
+            <h2>What We Facing</h2>
             <p>
               HK has high energy consumption and aggressive goals <br />
               Commercial buildings energy use = 1 Little Boy Atomic Bomb per 5
@@ -150,6 +158,79 @@
           </div>
         </div>
       </div>
+      <div class="wrapper-3" id="impact">
+        <h1 class="title">Impact</h1>
+        <div class="underline"></div>
+        <div class="row">
+          <h2 class="impact-title">
+            What we did for Well Tech Center past year:
+          </h2>
+          <div class="col-md-12">
+            <div class="value-box">
+              <div class="value-part" id="carbon-saved">
+                <span class="impact-value" id="electricity">41000</span><br />
+                <span class="impact-unit" id="electricity-unit">kWh Saved</span>
+              </div>
+              <div class="equal-sign">=</div>
+              <div class="value-part" id="relative-value">
+                <span class="impact-value" id="electricity-eqv">270</span><br />
+                <span class="impact-unit" id="electricity-eqv-unit"
+                  >Tons of Co2e</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-box">
+            <button class="btn btn-success btn-block col-md-3" onclick="updateToTrees()">
+              <i class="bx bxs-tree"></i>
+            </button>
+            <button
+              class="btn btn-secondary btn-block col-md-3"
+              onclick="updateToCo2e()"
+            >
+              <img
+                src="assets/co2.png"
+                alt="co2"
+                class="img-fluid"
+                id="co2-unit"
+              />
+            </button>
+            <button class="btn btn-primary btn-block col-md-3" onclick="updateToCars()">
+              <i class="bx bxs-car"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning btn-block col-md-3"
+              onclick="updateToDollar()"
+            >
+              <i class="bx bx-dollar" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    <div class="wrapper-4" id="achievement">
+      <h1 class="title">Achievement</h1>
+      <div class="underline"></div>
+      <div class="row align-items-center">
+        <div class="col-md-4 col-12 text-center">
+          <img
+            src="assets/beamplussilver.png"
+            alt="Medal"
+            class="img-fluid"
+            id="medal"
+          />
+        </div>
+        <div class="col-md-8 col-12">
+          <p class="description">
+            We have achieved significant milestones in our journey, including
+            receiving the prestigious Well Tech Center award for innovation and
+            sustainability.
+          </p>
+        </div>
+      </div>
     </div>
+    <script src="assets/scripts.js"></script>
   </body>
 </html>
