@@ -1,0 +1,60 @@
+
+
+.wrapper-3 .button-box {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.wrapper-3 .value-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border: 0px solid #ccc;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.wrapper-3 .value-part {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrapper-3 .equal-sign {
+  font-size: 15vh;
+  font-weight: bold;
+  color: green;
+}
+
+.wrapper-3 .btn-block {
+  flex: 1; /* Allow buttons to grow and take up available space */
+  margin: 0 25px; /* Remove any default margin */
+  width: auto; /* Override the width: 100% */
+  height: 50px;
+  font-size: 1.2em;
+}
+
+.impact-value{
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+#co2-unit {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    filter: invert(1); 
+  }
+
+.impact-title {
+    padding-bottom: 0px;
+}
+
+.row.buttons{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 200px;
+  margin-top: -50px;
+  position: relative;
+}
