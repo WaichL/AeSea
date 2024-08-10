@@ -27,7 +27,7 @@
 
 .title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .underline {
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  height: 300px;
+  height: 400px;
   position: relative;
 }
 
@@ -82,6 +82,26 @@
   }
 }
 
+#medal{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row.achievement {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 200px;
+  position: relative;
 }
